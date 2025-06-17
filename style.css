@@ -8,13 +8,28 @@ header {
   background-color: #fcf8ff;
   overflow: hidden;
   height: 676px;
+  position: relative;
 }
 main {
   overflow: hidden;
 }
+.deco-1,
+.deco-2 {
+  position: absolute;
+  visibility: hidden;
+}
+.deco-1 {
+  height: 270px;
+  top: 100px;
+  left: -100px;
+}
+.deco-2 {
+  height: 141px;
+  right: -60px;
+  top: 250px;
+}
 .top-header {
   background-color: #24053e;
-  /* height: 381px; */
   height: 500px;
 }
 .logo-header {
@@ -153,6 +168,14 @@ main {
   position: relative;
   top: -40px;
 }
+.blue-content::after {
+  content: url("assets/images/bg-pattern-3.svg");
+  height: 151px;
+  position: absolute;
+  right: -15px;
+  bottom: 0px;
+  visibility: hidden;
+}
 .aside-title {
   font-size: 32px;
   font-family: Fraunces;
@@ -188,6 +211,11 @@ footer {
   justify-content: space-between;
 }
 @media only screen and (min-width: 766px) {
+  .deco-1,
+  .deco-2,
+  .blue-content::after {
+    visibility: visible;
+  }
   header {
     height: 776px;
   }
