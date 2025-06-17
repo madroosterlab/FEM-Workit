@@ -4,17 +4,18 @@
   box-sizing: border-box;
 }
 header {
-  height: 561px;
   width: 100%;
   background-color: #fcf8ff;
   overflow: hidden;
+  height: 676px;
 }
 main {
   overflow: hidden;
 }
 .top-header {
   background-color: #24053e;
-  height: 381px;
+  /* height: 381px; */
+  height: 500px;
 }
 .logo-header {
   height: 67px;
@@ -55,12 +56,23 @@ main {
   margin-top: 56px;
 }
 .learn-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #24053e;
+  text-decoration: none;
   height: 53px;
   width: 151px;
   background-color: #44ffa1;
   font-size: 16px;
   font-weight: bold;
   font-family: Manrope;
+  border-radius: 2px;
+}
+.learn-button:hover {
+  background-color: #24053e;
+  color: #44ffa1;
+  border: 1px #44ffa1 solid;
 }
 .the-curve,
 .the-curve-2 {
@@ -81,6 +93,7 @@ main {
 .phone {
   height: 184px;
   width: 360px;
+  z-index: 40;
   margin: 0 auto;
   display: block;
   position: relative;
@@ -88,7 +101,6 @@ main {
 }
 .number-list-section {
   background-color: #fcf8ff;
-  z-index: 10;
   height: 862px;
   position: relative;
   text-align: center;
@@ -98,6 +110,7 @@ main {
   align-items: center;
   padding: 64px 20px;
   font-family: Fraunces;
+  z-index: 10;
 }
 .number-list-section p {
   font-family: Manrope;
@@ -176,7 +189,7 @@ footer {
 }
 @media only screen and (min-width: 766px) {
   header {
-    height: 676px;
+    height: 776px;
   }
   .number-list-section {
     padding: 44px 58px;
@@ -236,7 +249,7 @@ footer {
     height: 662px;
   }
 }
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1200px) {
   .logo-header {
     padding: 50px 80px;
     padding-bottom: 0;
@@ -246,16 +259,18 @@ footer {
     display: inline-block;
     width: 635px;
   }
+  .top-button {
+    margin-bottom: 100px;
+  }
   main {
-    padding-top: 30px;
     background-color: #fcf8ff;
   }
   .number-list-section {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     height: 462px;
-    padding-bottom: 0px;
+    padding-top: 20px;
   }
   .number-item,
   .number-text {
@@ -287,5 +302,11 @@ footer {
   }
   .aside-p {
     font-size: 12px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
