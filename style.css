@@ -210,6 +210,13 @@ footer {
   width: 116px;
   justify-content: space-between;
 }
+.attribution {
+  display: block;
+  position: relative;
+  bottom: 15px;
+  margin: 0 auto;
+  text-align: center;
+}
 @media only screen and (min-width: 766px) {
   .deco-1,
   .deco-2,
