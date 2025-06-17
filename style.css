@@ -6,6 +6,7 @@
 header {
   height: 561px;
   width: 100%;
+  background-color: #fcf8ff;
   overflow: hidden;
 }
 main {
@@ -86,6 +87,7 @@ main {
   top: -230px;
 }
 .number-list-section {
+  background-color: #fcf8ff;
   z-index: 10;
   height: 862px;
   position: relative;
@@ -146,6 +148,9 @@ main {
   font-family: Manrope;
   line-height: 180%;
   font-size: 16px;
+}
+.cta {
+  background-color: white;
 }
 .cta-button {
   margin: 0 auto;
@@ -232,7 +237,55 @@ footer {
   }
 }
 @media only screen and (min-width: 1400px) {
-  .the-curve {
-    width: 100vw;
+  .logo-header {
+    padding: 50px 80px;
+    padding-bottom: 0;
+  }
+  .tagline {
+    font-size: 80px;
+    display: inline-block;
+    width: 635px;
+  }
+  main {
+    padding-top: 30px;
+    background-color: #fcf8ff;
+  }
+  .number-list-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 462px;
+    padding-bottom: 0px;
+  }
+  .number-item,
+  .number-text {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    width: 352px;
+  }
+
+  .number-text {
+    padding-top: 50px;
+  }
+  .the-curve-2 {
+    top: 0px;
+    height: 150px;
+  }
+  .cta {
+    padding-top: 100px;
+  }
+  .cta img {
+    left: -300px;
+    bottom: -150px;
+    height: 350px;
+  }
+  .blue-content {
+    width: 530px;
+    height: 311px;
+    padding: 54px;
+  }
+  .aside-p {
+    font-size: 12px;
   }
 }
