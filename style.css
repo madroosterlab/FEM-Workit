@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 561px;
+}
+.top-header {
+  background-color: #24053e;
+  height: 381px;
+}
+.logo-header {
+  height: 67px;
+  padding: 32px 20px 0 23px;
+  display: flex;
+  justify-content: space-between;
+}
+.logo-header img {
+  width: 95.76px;
+  height: 24.61px;
+}
+.tagline {
+  font-family: Fraunces;
+  font-weight: 300;
+  font-size: 32px;
+}
+.title-cta {
+  font-family: Monserrat;
+  font-weight: 100;
+  line-height: 150%;
+  color: white;
+  font-size: 18px;
+}
+.underline {
+  text-decoration: underline;
+  text-decoration-color: #44ffa1;
+  text-underline-offset: 8px;
+  padding-bottom: 0;
+}
+.hero {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.tagline {
+  padding-bottom: 40px;
+  margin-top: 56px;
+}
+.learn-button {
+  height: 53px;
+  width: 151px;
+  background-color: #44ffa1;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Manrope;
+}
+.the-curve {
+  position: relative;
+  top: -130px;
+  height: 187.5px;
+  width: 150vw;
+  border-radius: 50%;
+  background-color: #24053e;
+  left: -90px;
+}
+.phone {
+  height: 184px;
+  width: 360px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: -230px;
+}
+.number-list-section {
+  height: 862px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px 20px;
+  font-family: Fraunces;
+}
+.number-list-section p {
+  font-family: Manrope;
+  line-height: 180%;
+  font-size: 18px;
+}
+.number-list {
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 46px;
+}
+.blue-content {
+  width: 335px;
+  text-align: center;
+  height: 393px;
+  background-color: #24053e;
+  margin: 0 auto;
+  color: white;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: -40px;
+}
+.aside-title {
+  font-size: 32px;
+  font-family: Fraunces;
+}
+.aside-p {
+  font-family: Manrope;
+  line-height: 180%;
+  font-size: 16px;
+}
+.cta-button {
+  margin: 0 auto;
+}
+.cta img {
+  width: auto;
+  height: 280px;
+  display: block;
+  margin: 0 auto;
+}
+footer {
+  height: 260.61px;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-media-icons {
+  display: flex;
+  width: 116px;
+  justify-content: space-between;
+}
