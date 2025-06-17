@@ -5,6 +5,11 @@
 }
 header {
   height: 561px;
+  width: 100%;
+  overflow: hidden;
+}
+main {
+  overflow: hidden;
 }
 .top-header {
   background-color: #24053e;
@@ -56,14 +61,21 @@ header {
   font-weight: bold;
   font-family: Manrope;
 }
-.the-curve {
+.the-curve,
+.the-curve-2 {
   position: relative;
   top: -130px;
   height: 187.5px;
-  width: 150vw;
+  overflow: hidden;
   border-radius: 50%;
-  background-color: #24053e;
   left: -90px;
+  width: 150vw;
+}
+.the-curve {
+  background-color: #24053e;
+}
+.the-curve-2 {
+  background-color: #fcf8ff;
 }
 .phone {
   height: 184px;
@@ -74,7 +86,9 @@ header {
   top: -230px;
 }
 .number-list-section {
+  z-index: 10;
   height: 862px;
+  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -89,6 +103,7 @@ header {
   font-size: 18px;
 }
 .number-list {
+  display: inline-block;
   border: 1px solid black;
   border-radius: 50%;
   width: 48px;
@@ -96,6 +111,18 @@ header {
   font-size: 20px;
   font-weight: bold;
   line-height: 46px;
+}
+.number-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.info-p {
+  padding-top: 10px;
+}
+.number-text h2 {
+  padding-top: 10px;
 }
 .blue-content {
   width: 335px;
@@ -141,4 +168,71 @@ footer {
   display: flex;
   width: 116px;
   justify-content: space-between;
+}
+@media only screen and (min-width: 766px) {
+  header {
+    height: 676px;
+  }
+  .number-list-section {
+    padding: 44px 58px;
+    justify-content: flex-start;
+    background-color: #fcf8ff;
+  }
+  .the-curve,
+  .the-curve-2 {
+    width: 120vw;
+  }
+  .number-item {
+    display: flex;
+    flex-direction: row;
+    padding-top: 75px;
+  }
+  .number-text {
+    width: 576px;
+    height: 120px;
+  }
+  .number-text h2 {
+    text-align: left;
+    padding-left: 56px;
+    padding-top: 0;
+  }
+  .phone {
+    width: 602.81px;
+    height: 296px;
+  }
+  .info-p {
+    padding-left: 56px;
+    padding-top: 28px;
+    text-align: left;
+  }
+  .fix {
+    padding-top: 0;
+  }
+  .blue-content {
+    width: 504px;
+    height: 309px;
+    right: -90px;
+    text-align: left;
+  }
+  .cta {
+    margin-top: -90px;
+  }
+  .cta img {
+    left: -200px;
+    bottom: -50px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+  }
+  .cta button {
+    margin: 0;
+  }
+  .number-list-section {
+    height: 662px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .the-curve {
+    width: 100vw;
+  }
 }
